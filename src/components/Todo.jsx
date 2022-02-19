@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Todo.scss";
 
 const Todo = ({ children }) => {
+  // State for the toggle button
   const [active, setActive] = useState(true);
 
   const handleToggleClick = () => {
