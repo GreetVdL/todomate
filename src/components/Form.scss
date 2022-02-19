@@ -1,0 +1,31 @@
+@import "../css/variables";
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  label {
+    text-align: center;
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+  }
+  input {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 50%;
+    font-size: 1.8rem;
+    border-radius: 7px;
+    border: 1px solid black;
+  }
+  button {
+    padding: 10px 15px;
+    font-size: 1.8rem;
+    background-color: $green;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-family: "Shizuru", cursive;
+  }
+}

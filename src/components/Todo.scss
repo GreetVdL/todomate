@@ -1,0 +1,30 @@
+@import "../css/variables";
+
+li {
+  list-style: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  p {
+    padding: 10px 15px;
+    font-size: 1.8rem;
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 50%;
+  }
+  button {
+    padding: 10px 15px;
+    font-size: 1.8rem;
+
+    border: 1px solid black;
+    border-radius: 7px;
+    font-family: "Shizuru", cursive;
+  }
+  .toggle {
+    background-color: $orange;
+  }
+  .remove {
+    background-color: $red;
+  }
+}
