@@ -11,23 +11,37 @@ form {
     text-align: center;
     font-size: 1.8rem;
     padding-bottom: 20px;
+    text-transform: uppercase;
+    font-family: "Indie Flower", cursive;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
   }
   input {
     padding: 10px;
     margin-bottom: 20px;
     width: 50%;
     font-size: 1.8rem;
-    border-radius: 7px;
-    border: 1px solid black;
+
+    // border: 1px solid black;
     font-family: "Indie Flower", cursive;
     letter-spacing: 0.3rem;
+    // outline: none;
+    // border: 1px solid black;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #c4dae3, #e9ffff);
+    box-shadow: 5px 5px 10px #bed3db, -5px -5px 10px #f6ffff;
   }
   button {
     padding: 10px 15px;
     font-size: 1.8rem;
     background-color: $green;
-    border: 1px solid black;
-    border-radius: 7px;
+    // border: 1px solid black;
+    border-radius: 12px;
     font-family: "Shizuru", cursive;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #b3e3c9, #d5ffef);
+    box-shadow: 5px 5px 10px #addbc2, -5px -5px 10px #e1fffc;
   }
 }

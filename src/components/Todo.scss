@@ -9,24 +9,33 @@ li {
   p {
     padding: 10px 15px;
     font-size: 1.8rem;
-    border: 1px solid black;
-    border-radius: 7px;
+    // border: 1px solid black;
+    border-radius: 12px;
     width: 50%;
     font-family: "Indie Flower", cursive;
     letter-spacing: 0.3rem;
+  }
+  .strike {
+    text-decoration: line-through;
   }
   button {
     padding: 10px 15px;
     font-size: 1.8rem;
 
-    border: 1px solid black;
-    border-radius: 7px;
+    border: none;
+    border-radius: 12px;
     font-family: "Shizuru", cursive;
   }
   .toggle {
     background-color: $orange;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #e0c8b6, #ffeed8);
+    box-shadow: 5px 5px 10px #d9c1b0, -5px -5px 10px #fffbe4;
   }
   .remove {
     background-color: $red;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #e1bdc1, #ffe1e5);
+    box-shadow: 5px 5px 10px #dab7ba, -5px -5px 10px #ffedf2;
   }
 }

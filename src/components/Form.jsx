@@ -9,7 +9,7 @@ const Form = () => {
   });
   return (
     <form>
-      <label htmlFor="text">Enter what you want to do!</label>
+      <label htmlFor="text">write down what you want to do!</label>
       <input ref={inputRef} id="text" type="text" />
       <button>ADD TO DO</button>
     </form>
