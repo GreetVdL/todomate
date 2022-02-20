@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import Todo from "./Todo";
 import "./List.scss";
+import { TodoContext } from "../data/TodoContext";
 
 const List = () => {
-  const data = ["gras afrijden", "React studeren", "opruimen"];
+  const data = useContext(TodoContext);
   return (
     <ul>
-      {data.map((todo) => {
-        return <Todo>{todo}</Todo>;
+      {data.todos.map((todo, i) => {
+        return <Todo index={i}>{todo}</Todo>;
       })}
     </ul>
   );

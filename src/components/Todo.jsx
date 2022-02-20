@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Todo.scss";
 
-const Todo = ({ children }) => {
+const Todo = ({ children, index }) => {
   // State for the toggle button
   const [active, setActive] = useState(true);
 
@@ -9,7 +9,7 @@ const Todo = ({ children }) => {
     setActive(!active);
   };
   return (
-    <li>
+    <li key={index}>
       <p className={active ? "" : "strike"}>{children}</p>
       <button className="toggle" onClick={handleToggleClick}>
         {active ? "DONE" : "TO DO"}
