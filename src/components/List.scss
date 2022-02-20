@@ -4,6 +4,12 @@ ul {
   flex-direction: column;
   width: 55%;
   margin: 0 auto;
+  .placeholder {
+    font-family: "Indie Flower", cursive;
+    font-size: 1.8rem;
+    letter-spacing: 0.3rem;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 1372px) {

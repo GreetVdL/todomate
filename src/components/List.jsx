@@ -8,13 +8,19 @@ const List = () => {
   const data = useContext(TodoContext);
   return (
     <ul>
-      {data.todos.map((todo) => {
-        return (
-          <Todo key={nanoid()} todo={todo}>
-            {todo}
-          </Todo>
-        );
-      })}
+      {data.todos.length ? (
+        data.todos.map((todo) => {
+          return (
+            <Todo key={nanoid()} todo={todo}>
+              {todo}
+            </Todo>
+          );
+        })
+      ) : (
+        <p className="placeholder">
+          Seems like you have nothing on your plate just yet...
+        </p>
+      )}
     </ul>
   );
 };
