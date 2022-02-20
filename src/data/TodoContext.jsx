@@ -1,10 +1,11 @@
 import { createContext, useState } from "react";
 import { nanoid } from "nanoid";
+import useLocalStorage from "../hooks/useLocalStorage";
 
 const TodoContext = createContext(null);
 
 const TodoProvider = ({ children }) => {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useLocalStorage("todos", []);
   const [entered, setEntered] = useState("");
 
   const addTodo = () => {
