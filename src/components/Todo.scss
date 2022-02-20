@@ -38,5 +38,16 @@ li {
     border-radius: 12px;
     background: linear-gradient(145deg, #e1bdc1, #ffe1e5);
     box-shadow: 5px 5px 10px #dab7ba, -5px -5px 10px #ffedf2;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 586px) {
+  li {
+    flex-direction: column;
+    p {
+      width: 100%;
+      text-align: center;
+    }
   }
 }

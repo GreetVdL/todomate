@@ -1,20 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "./Todo.scss";
+import { TodoContext } from "../data/TodoContext";
 
-const Todo = ({ children, index }) => {
+const Todo = ({ children, todo }) => {
   // State for the toggle button
   const [active, setActive] = useState(true);
+
+  const data = useContext(TodoContext);
 
   const handleToggleClick = () => {
     setActive(!active);
   };
+
+  const handleRemoveClick = () => {
+    data.removeTodo(todo);
+  };
+
   return (
-    <li key={index}>
+    <li>
       <p className={active ? "" : "strike"}>{children}</p>
-      <button className="toggle" onClick={handleToggleClick}>
-        {active ? "DONE" : "TO DO"}
-      </button>
-      <button className="remove">REMOVE</button>
+      <div className="buttons">
+        <button className="toggle" onClick={handleToggleClick}>
+          {active ? "DONE" : "TO DO"}
+        </button>
+        <button className="remove" onClick={handleRemoveClick}>
+          REMOVE
+        </button>
+      </div>
     </li>
   );
 };

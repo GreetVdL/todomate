@@ -102,3 +102,9 @@ button {
     transform: translateX(-6px) rotate(-1.2deg);
   }
 }
+
+@media screen and (max-width: 414px) {
+  header {
+    padding: 50px 10px;
+  }
+}

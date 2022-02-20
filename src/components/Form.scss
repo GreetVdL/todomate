@@ -3,7 +3,7 @@
 form {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   align-items: center;
   font-family: "Roboto Mono", monospace;
@@ -43,5 +43,29 @@ form {
     border-radius: 12px;
     background: linear-gradient(145deg, #b3e3c9, #d5ffef);
     box-shadow: 5px 5px 10px #addbc2, -5px -5px 10px #e1fffc;
+  }
+}
+
+@media screen and (max-width: 1304px) {
+  form {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 818px) {
+  form {
+    width: 90%;
+    input {
+      width: 75%;
+    }
+  }
+}
+
+@media screen and (max-width: 484px) {
+  form {
+    width: 90%;
+    input {
+      width: 90%;
+    }
   }
 }
