@@ -12,7 +12,7 @@ const Todo = ({ children }) => {
     <li>
       <p className={active ? "" : "strike"}>{children}</p>
       <button className="toggle" onClick={handleToggleClick}>
-        TOGGLE
+        {active ? "DONE" : "TO DO"}
       </button>
       <button className="remove">REMOVE</button>
     </li>
