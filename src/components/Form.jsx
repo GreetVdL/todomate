@@ -17,7 +17,7 @@ const Form = () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    data.addTodo(data.entered);
+    data.addTodo();
     data.setEntered("");
   };
 
