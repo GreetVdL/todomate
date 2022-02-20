@@ -32,6 +32,12 @@ form {
     // background: linear-gradient(145deg, #c4dae3, #e9ffff);
     // box-shadow: 5px 5px 10px #bed3db, -5px -5px 10px #f6ffff;
   }
+  .validation {
+    font-size: 1.8rem;
+    font-family: "Indie Flower", cursive;
+    letter-spacing: 0.3rem;
+    color: $valid;
+  }
   button {
     padding: 10px 15px;
     font-size: 1.8rem;

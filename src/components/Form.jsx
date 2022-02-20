@@ -1,8 +1,10 @@
-import React, { useRef, useEffect, useContext } from "react";
+import React, { useState, useRef, useEffect, useContext } from "react";
 import "./Form.scss";
 import { TodoContext } from "../data/TodoContext";
 
 const Form = () => {
+  const [valid, setValid] = useState(true);
+
   const inputRef = useRef();
 
   const data = useContext(TodoContext);
@@ -12,11 +14,16 @@ const Form = () => {
   });
 
   const handleInputChange = (e) => {
+    setValid(true);
     data.setEntered(e.target.value);
   };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
+    if (data.entered === "") {
+      setValid(!valid);
+      return;
+    }
     data.addTodo();
     data.setEntered("");
   };
@@ -31,6 +38,7 @@ const Form = () => {
         value={data.entered}
         onChange={handleInputChange}
       />
+      {valid ? "" : <p className="validation">Please enter a to do.</p>}
       <button>ADD TO DO</button>
     </form>
   );
